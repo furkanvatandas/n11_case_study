@@ -36,9 +36,6 @@ class ProductDetailLoaded extends ProductDetailState {
   String get productPrice => productDetail.details.price.cardinal.toString() + productDetail.details.price.currency;
 
   String get productDiscounted => productDetail.details.discounted ? "Var" : "Yok";
-
-  @override
-  List<Object> get props => [productDetail];
 }
 
 class ProductDetailError extends ProductDetailState {

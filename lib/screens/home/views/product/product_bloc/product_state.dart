@@ -31,8 +31,6 @@ class ProductLoaded extends ProductState {
 
   String productPrice(index) => product.products[index].price.cardinal.toString() + product.products[index].price.currency;
 
-  @override
-  List<Object> get props => [product];
 }
 
 class ProductError extends ProductState {

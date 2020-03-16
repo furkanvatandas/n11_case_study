@@ -4,11 +4,11 @@ import 'package:n11casestudy/data/models/summary.dart';
 import 'package:n11casestudy/utils/api_call_handler.dart';
 
 class ProductProvider {
-  String baseUrl = "https://mfvn1.free.beeceptor.com";
+  String baseUrl = "https://n11assessment.free.beeceptor.com";
 
-  String summaryController = "/summary";
-  String productController = "/product";
-  String productDetailController = "/productDetail";
+  String summaryController = "/flutter/getHomePage";
+  String productController = "/flutter/getProducts";
+  String productDetailController = "/flutter/getProductDetail";
 
   Future<Summary> fetchAllSummary() async {
     String url = baseUrl + summaryController;

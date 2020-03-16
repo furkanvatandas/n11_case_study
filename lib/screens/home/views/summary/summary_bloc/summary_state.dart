@@ -4,9 +4,6 @@ import 'package:n11casestudy/widgets/vertical_bar_chart.dart';
 
 abstract class SummaryState {
   const SummaryState();
-
-  @override
-  List<Object> get props => [];
 }
 
 class SummaryInitial extends SummaryState {}
@@ -40,9 +37,6 @@ class SummaryLoaded extends SummaryState {
 
   List<VerticalBarChartModel> get orderList =>
       summary.salesReport.map((SalesReport val) => VerticalBarChartModel(val.matchDate, val.sales)).toList();
-
-  @override
-  List<Object> get props => [summary];
 }
 
 class SummaryError extends SummaryState {
